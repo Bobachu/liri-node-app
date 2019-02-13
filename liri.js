@@ -125,15 +125,11 @@ function doIt() {
         }
         let doItRes = data.split(",");
         userInput = doItRes[1].replace(/"/g, "");
-        // console.log(doItRes);
         if (doItRes[0] === "spotify-this-song") {
-            // userInput = doItRes[1];
             spotifySong();
         } else if (doItRes[0] === "movie-this") {
-            // userInput = doItRes[1];
             movieThis();
         } else if (doItRes[0] === "concert-this") {
-            // userInput = doItRes[1];
             concertThis();
         }
 
