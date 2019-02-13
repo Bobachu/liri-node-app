@@ -78,7 +78,6 @@ function movieThis() {
     const omdbUrl = "https://www.omdbapi.com/?t=" + userInput + "&y=&plot=short&apikey=trilogy";
 
     axios.get(omdbUrl).then(function (response) {
-        console.log(omdbUrl);
         if (userInput) {
             let movieInfo = "\nThe movie is: " + response.data.Title + "\nThe release year is: " + response.data.Year + "\nThe IMDb rating is: " + response.data.imdbRating + "\nThe Rotten Tomatoes rating is: " + response.data.Ratings[1].Value + "\nThe movie was made in: " + response.data.Country + "\nlanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nStarring: " + response.data.Actors
             console.log(movieInfo);

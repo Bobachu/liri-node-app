@@ -24,9 +24,12 @@ All names can be multiple words or in quotes.
 - movie-this
   - This command will return the movie title, the release year, the IMDb rating, the rotten tomatoes rating, the country it was made in, and language, the plot, and the actors.
 
-All searches and responses are saved in the log.txt file
+All searches and responses are saved in the log.txt file.
 
 #### For help and support
 Contact Bob Church at bobachu.developer@gmail.com
+
+Screenshots of each function are included in the screenshots folder.
+A video of it in action can be seen here: https://drive.google.com/file/d/1mdiq56XPIlLLMqjTpzBYty577WqHeiO_/view
 
 Project maintained by Bob Church
