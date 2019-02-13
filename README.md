@@ -4,8 +4,8 @@ To create a command line based app that takes certain commands and returns a spe
 
 # Commands accepted
 #### Commands are entered into the terminal or gitbash in the following format:
-##### node liri.js (command) (query)
-###### (command) can be one of the following:
+#### node liri.js (command) (query)
+#### (command) can be one of the following:
 - concert-this (artist name) 
 
 - spotify-this-song (song name)
@@ -14,7 +14,8 @@ To create a command line based app that takes certain commands and returns a spe
 
 - do-what-it-says
   - this option will use data from a provided text file to execute a command
-All names can be multiple words or in quotes.
+
+(artist name) (song name) and (movie name) are the **(query)** and you can enter any band, movie, or song. All names can be multiple words or in quotes.
 
 #### Returned data
 - concert-this
@@ -29,7 +30,14 @@ All searches and responses are saved in the log.txt file.
 #### For help and support
 Contact Bob Church at bobachu.developer@gmail.com
 
-Screenshots of each function are included in the screenshots folder.
-A video of it in action can be seen here: https://drive.google.com/file/d/1mdiq56XPIlLLMqjTpzBYty577WqHeiO_/view
+**[A video of it in action can be seen here](https://drive.google.com/file/d/1mdiq56XPIlLLMqjTpzBYty577WqHeiO_/view)**
+
+## Screenshots:
+![Image of concert-this](screenshots/concert-this.png)
+![Image of movie-this](screenshots/movie-this.png)
+![Image of spotify-this-song](screenshots/spotify-this-song.png)
+![Image of do-what-it-says](screenshots/do-what-it-says.png)
+
+
 
 Project maintained by Bob Church

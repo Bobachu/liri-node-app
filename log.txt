@@ -394,3 +394,113 @@ Artist: Backstreet Boys
 Song: I Want It That Way
 Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 Album: The Hits--Chapter One
+
+Search justin timberlake
+The location is: Rogers Arena
+Which is in: Vancouver
+And is on: 02/14/2019
+
+Search justin timberlake
+The location is: Rogers Arena
+Which is in: Vancouver
+And is on: 02/15/2019
+
+Search justin timberlake
+The location is: Golden 1 Center
+Which is in: Sacramento
+And is on: 02/24/2019
+
+Search justin timberlake
+The location is: Talking Stick Resort Arena
+Which is in: Phoenix
+And is on: 03/05/2019
+
+Search justin timberlake
+The location is: T-Mobile Arena
+Which is in: Las Vegas
+And is on: 03/08/2019
+
+Search justin timberlake
+The location is: Staples Center
+Which is in: Los Angeles
+And is on: 03/10/2019
+
+Search justin timberlake
+The location is: Save Mart Center
+Which is in: Fresno
+And is on: 03/13/2019
+
+Search justin timberlake
+The location is: Oracle Arena
+Which is in: Oakland
+And is on: 03/15/2019
+
+Search justin timberlake
+The location is: Sprint Center
+Which is in: Kansas City
+And is on: 03/21/2019
+
+Search justin timberlake
+The location is: CHI Health Center Omaha
+Which is in: Omaha
+And is on: 03/23/2019
+
+Search justin timberlake
+The location is: Little Caesars Arena
+Which is in: Detroit
+And is on: 03/25/2019
+
+Search justin timberlake
+The location is: Enterprise Center
+Which is in: Saint Louis
+And is on: 03/28/2019
+
+Search justin timberlake
+The location is: Nationwide Arena
+Which is in: Columbus
+And is on: 03/31/2019
+
+Search justin timberlake
+The location is: Bankers Life Fieldhouse
+Which is in: Indianapolis
+And is on: 04/02/2019
+
+Search justin timberlake
+The location is: Van Andel Arena
+Which is in: Grand Rapids
+And is on: 04/04/2019
+
+Search justin timberlake
+The location is: KeyBank Center
+Which is in: Buffalo
+And is on: 04/06/2019
+
+Search justin timberlake
+The location is: Wells Fargo Center
+Which is in: Philadelphia
+And is on: 04/09/2019
+
+Search justin timberlake
+The location is: Mohegan Sun Arena
+Which is in: Uncasville
+And is on: 04/12/2019
+
+Search justin timberlake
+The location is: Mohegan Sun Arena
+Which is in: Uncasville
+And is on: 04/13/2019
+
+Search justin timberlake
+The location is: Honda Center
+Which is in: Anaheim
+And is on: 02/22/2019
+
+Search justin timberlake
+The location is: Moda Center
+Which is in: Portland
+And is on: 02/18/2019
+
+Search justin timberlake
+The location is: Pechanga Arena San Diego
+Which is in: San Diego
+And is on: 02/21/2019

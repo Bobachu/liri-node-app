@@ -24,7 +24,9 @@ switch (option) {
     case "do-what-it-says":
         doIt();
         break;
-
+    default:
+        console.log("Please enter one of the following commands after node liri.js followed by your query: \nconcert-this \nspotify-this-song \nmovie-this \ndo-what-it-says");
+        break;
 }
 
 // Function for getting concert info from bands in town api
@@ -34,18 +36,22 @@ function concertThis() {
     axios.get(bandsUrl)
         .then(function (response) {
             var data = response.data;
+            if (data.length === 0) {
+                console.log("Looks like they aren't touring :(");
+            } else {
             for (var i = 0; i < data.length; i++) {
                 let venueLoc = data[i].venue.name;
                 let venueCity = data[i].venue.city;
                 let eventDate = data[i].datetime;
+                
+                    let concertInfo = "\nThe location is: " + venueLoc + "\nWhich is in: " + venueCity + "\nAnd is on: " + moment(eventDate).format("MM/DD/YYYY")
+                    console.log(concertInfo);
 
-                let concertInfo = "\nThe location is: " + venueLoc + "\nWhich is in: " + venueCity + "\nAnd is on: " + moment(eventDate).format("MM/DD/YYYY")
-                console.log(concertInfo);
-
-                // search and its info appended to log.txt
-                fs.appendFile("log.txt", "\n\nSearch " + userInput + concertInfo, function (err) {
-                    if (err) throw err;
-                })
+                    // search and its info appended to log.txt
+                    fs.appendFile("log.txt", "\n\nSearch " + userInput + concertInfo, function (err) {
+                        if (err) throw err;
+                    })
+                }
             }
 
         }).catch(function (error) {
@@ -55,23 +61,37 @@ function concertThis() {
 
 // function for getting song info from spotify
 function spotifySong() {
-    var spotify = new Spotify(keys.spotify)
-    spotify.search({ type: 'track', query: userInput }, function (err, data) {
-        if (err) {
-            return console.log('Error occurred: ' + err);
-        }
+    if (userInput) {
+        var spotify = new Spotify(keys.spotify)
+        spotify.search({ type: 'track', query: userInput }, function (err, data) {
+            if (err) {
+                return console.log('Error occurred: ' + err);
+            }
 
-        let songInfo = "\nArtist: " + data.tracks.items[0].artists[0].name + "\nSong: " + data.tracks.items[0].name + "\nLink: " + data.tracks.items[0].external_urls.spotify + "\nAlbum: " + data.tracks.items[0].album.name;
-        console.log(songInfo);
+            let songInfo = "\nArtist: " + data.tracks.items[0].artists[0].name + "\nSong: " + data.tracks.items[0].name + "\nLink: " + data.tracks.items[0].external_urls.spotify + "\nAlbum: " + data.tracks.items[0].album.name;
+            console.log(songInfo);
 
-        // search and its info appended to log.txt
-        fs.appendFile("log.txt", "\n\nSearch " + userInput + songInfo, function (err) {
-            if (err) throw err;
+            // search and its info appended to log.txt
+            fs.appendFile("log.txt", "\n\nSearch " + userInput + songInfo, function (err) {
+                if (err) throw err;
+            })
+
+
+        });
+    } else {
+        var spotify = new Spotify(keys.spotify)
+        userInput = "the sign ace of base"
+        spotify.search({ type: 'track', query: userInput }, function (err, data) {
+            if (err) {
+                return console.log('Error occurred: ' + err);
+            }
+
+            let songInfo = "\nArtist: " + data.tracks.items[0].artists[0].name + "\nSong: " + data.tracks.items[0].name + "\nLink: " + data.tracks.items[0].external_urls.spotify + "\nAlbum: " + data.tracks.items[0].album.name;
+            console.log(songInfo);
         })
-
-
-    });
+    }
 }
+
 
 // function for getting movie info from omdb api
 function movieThis() {
